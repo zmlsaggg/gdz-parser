@@ -27,7 +27,7 @@ gdz-parser "Математика 10 класс Максимов 215 страни
 ```powershell
 # Windows
 py -m venv .venv
-.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 ```
 
 ```sh

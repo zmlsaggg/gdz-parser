@@ -1,5 +1,16 @@
 # ГДЗ-парсер
 
+<p align="center">
+  Найди подходящую открытую страницу с решением и сохрани удобный локальный просмотр — HTML, изображение или текст.
+</p>
+
+<p align="center">
+  <a href="https://pypi.org/project/gdz-parser/"><img src="https://img.shields.io/pypi/v/gdz-parser?style=flat-square&logo=pypi&logoColor=white&label=PyPI&color=8B5CF6" alt="PyPI version"></a>
+  <a href="https://github.com/zmlsaggg/gdz-parser/releases/latest"><img src="https://img.shields.io/github/v/release/zmlsaggg/gdz-parser?style=flat-square&logo=github&label=release&color=7C3AED" alt="Latest release"></a>
+  <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.9+">
+  <a href="https://github.com/zmlsaggg/gdz-parser/releases/latest"><img src="https://img.shields.io/badge/Windows-EXE-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows executable"></a>
+</p>
+
 ## Установка через pip
 
 Нужен Python 3.9 или новее. Пакет называется `gdz-parser`. После установки самого пакета скачай браузер Chromium, который использует Playwright.

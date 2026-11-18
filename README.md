@@ -1,14 +1,52 @@
 # ГДЗ-парсер
 
-## Установка через PyPI
+## Установка через pip
+
+Нужен Python 3.9 или новее. Пакет называется `gdz-parser`. После установки самого пакета скачай браузер Chromium, который использует Playwright.
+
+### Windows (PowerShell)
 
 ```powershell
-py -m pip install gdz-parser
+py -m pip install --upgrade gdz-parser
 py -m playwright install chromium
 gdz-parser "Математика 10 класс Максимов 215 страница"
 ```
 
-После установки браузера Chromium можно использовать команду `gdz-parser` из любого каталога. Флаг `--upload-kappa` остаётся необязательным и по умолчанию ничего не публикует.
+### Linux и macOS
+
+```sh
+python3 -m pip install --upgrade gdz-parser
+python3 -m playwright install chromium
+gdz-parser "Математика 10 класс Максимов 215 страница"
+```
+
+Если Linux сообщает о недостающих системных библиотеках Chromium, установи их командой `python3 -m playwright install --with-deps chromium` (для установки системных пакетов могут понадобиться права администратора).
+
+Если система запрещает установку в системный Python, сначала создай виртуальное окружение:
+
+```powershell
+# Windows
+py -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+```sh
+# Linux / macOS
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Затем в активированном окружении выполни:
+
+```sh
+python -m pip install --upgrade gdz-parser
+python -m playwright install chromium
+```
+
+Обновить пакет: `python -m pip install --upgrade gdz-parser`. Удалить: `python -m pip uninstall gdz-parser`.
+После установки Chromium команду `gdz-parser` можно запускать из любого каталога. Флаг `--upload-kappa` необязателен и по умолчанию ничего не публикует.
+
+## Запуск из исходников
 
 
 Скачайте репозиторий и откройте терминал в его папке. Нужен Python 3.9+.
